@@ -16,6 +16,7 @@ public record DipendenteDTO(
         String cognome,
         @NotEmpty(message = "e-mail obbligatoria")
         @Email(message = "e-mail non valida")
-        String email
+        String email,
+        String avatar
 ) {
 }

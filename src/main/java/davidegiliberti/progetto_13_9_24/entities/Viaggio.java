@@ -12,13 +12,12 @@ public class Viaggio {
     private long id;
     private String destinazione;
     private LocalDate data;
-    @Enumerated(EnumType.STRING)
-    private StatoViaggio statoViaggio;
+    private String statoViaggio;
 
     public Viaggio() {
     }
 
-    public Viaggio(String destinazione, LocalDate data, StatoViaggio statoViaggio) {
+    public Viaggio(String destinazione, LocalDate data, String statoViaggio) {
         this.destinazione = destinazione;
         this.data = data;
         this.statoViaggio = statoViaggio;
@@ -44,11 +43,11 @@ public class Viaggio {
         this.data = data;
     }
 
-    public StatoViaggio getStatoViaggio() {
+    public String getStatoViaggio() {
         return statoViaggio;
     }
 
-    public void setStatoViaggio(StatoViaggio statoViaggio) {
+    public void setStatoViaggio(String statoViaggio) {
         this.statoViaggio = statoViaggio;
     }
 
